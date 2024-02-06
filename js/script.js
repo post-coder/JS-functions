@@ -1,16 +1,36 @@
 
-function randomNumber10() {
+function pariODispari(numero) {
 
-    const random = Math.floor(Math.random() * 10) + 1
+    if (numero % 2 == 0) {
 
-    return random;
+        return "pari";
+
+    } else {
+
+        return "dispari";
+
+    }
+
 }
 
-const numeroCasuale = randomNumber10();
-
-console.log(numeroCasuale)
 
 
-const altroNumeroCasuale = randomNumber10();
+document.getElementById("start").addEventListener('click', 
+    function() {
+    
+        const number = document.getElementById("numero").value;
 
-console.log(altroNumeroCasuale)
+        document.querySelector("h1").innerText = pariODispari(number);
+
+    }
+)
+
+
+// let risultato = pariODispari(Number(prompt("Inserisci un numero")));
+
+// console.log(risultato);
+
+// risultato = pariODispari(6753216735261);
+
+// console.log(risultato)
+
