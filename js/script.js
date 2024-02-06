@@ -1,17 +1,16 @@
 
+function randomNumber10() {
 
+    const random = Math.floor(Math.random() * 10) + 1
 
-function somma(a, b) {
-
-    const sum = a + b;
-    // console.log(sum);
-
-    return sum;
-
+    return random;
 }
 
+const numeroCasuale = randomNumber10();
 
-let variabile = somma(2,3)
+console.log(numeroCasuale)
 
 
-console.log(variabile)
+const altroNumeroCasuale = randomNumber10();
+
+console.log(altroNumeroCasuale)
